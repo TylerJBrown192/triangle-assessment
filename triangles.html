@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Triangles</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Triangles</h1>
+
+    <p>Welcome to the javascript-run Triangle app! Put in any 3 whole numbers into the input fields and this will tell you what type of triangle you've put in!</p>
+
+    <form id="tri-sides">
+      <div class="form-group">
+        <label for="length1">First side:</label>
+        <input id="length1" type="text">
+        <br>
+        <label for="length2">Second side:</label>
+        <input id="length2" type="text">
+        <br>
+        <label for="length3">Third side:</label>
+        <input id="length3" type="text">
+      </div>
+      <br>
+      <button type="submit" class="btn">Find out what triangle this is!</button>
+    </form>
+
+    <div id="result">
+      <p><span class="no-tri">The lengths you've put in creates a </span><span class="tri-result"></span></p>
+    </div>
+  </div>
+</body>
+</html>

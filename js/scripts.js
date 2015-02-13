@@ -11,7 +11,20 @@ var triangle = function(side_length) {
     return "This isn't a triangle!"
   } else if ((side1 !== side2) && (side2 !== side3) && (side3 !== side1)) {
     return "Scalene Triangle"
-
   };
-
 };
+
+$(document).ready(function() {
+  $("form#tri-sides").submit(function(event) {
+    var length1 = parseInt($("input#length1").val());
+    var length2 = parseInt($("input#length2").val());
+    var length3 = parseInt($("input#length3").val());
+
+    var result = triangle([length1, length2, length3]);
+
+    $(".tri-result").text(triangle(result));
+
+    $("#result").show();
+    event.preventDefault();
+  });
+});
