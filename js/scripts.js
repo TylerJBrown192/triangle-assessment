@@ -5,12 +5,13 @@ var triangle = function(side_length) {
 
   if ((side1 === side2) && (side2 === side3) && (side3 === side1)) {
     return "Equilateral Triangle"
-  } else if { ((side1 === side2) || (side2 === side3) || (side3 === side1))
+  } else if ((side1 === side2) || (side2 === side3) || (side3 === side1)) {
     return "Isosceles Triangle"
-  } else if { ((side1 !== side2) && (side2 !== side3) && (side3 !== side1))
-    return "Scalene Triangle"
-  } else if { (((side1 + side2) !== side3) || ((side2 + side3) !== side1) || ((side3 + side1) !== side2))
+  } else if (((side1 + side2) !== side3) && ((side2 + side3) !== side1) && ((side3 + side1) !== side2)) {
     return "This isn't a triangle!"
-  }
+  } else if ((side1 !== side2) && (side2 !== side3) && (side3 !== side1)) {
+    return "Scalene Triangle"
+
+  };
 
 };
