@@ -22,7 +22,12 @@ $(document).ready(function() {
 
     var result = triangle([length1, length2, length3]);
 
-    $(".tri-result").text(triangle(result));
+    if (result === "This isn't a triangle!") {
+      $(".no-tri").text("This isn't a triangle!");
+    } else if (result !== "This isn't a triangle!") {
+      $(".no-tri").text("The lengths you've put in creates a ");
+      $(".tri-result").text(result);
+    }
 
     $("#result").show();
     event.preventDefault();
